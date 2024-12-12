@@ -1,0 +1,60 @@
+[2024-09-14 10:10:05] local.ERROR: Uncaught ErrorException: include(/home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/../../app/Http/Middleware/Byondsnack.php): Failed to open stream: No such file or directory in /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php:582
+Stack trace:
+#0 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php(582): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}()
+#2 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php(582): include('...')
+#3 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php(433): Composer\Autoload\{closure}()
+#4 [internal function]: Composer\Autoload\ClassLoader->loadClass()
+#5 Command line code(1): ReflectionMethod->__construct()
+#6 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ErrorException: include(/home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/../../app/Http/Middleware/Byondsnack.php): Failed to open stream: No such file or directory in /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php:582
+Stack trace:
+#0 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(256): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php(582): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->Illuminate\\Foundation\\Bootstrap\\{closure}()
+#2 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php(582): include('...')
+#3 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php(433): Composer\\Autoload\\{closure}()
+#4 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#5 Command line code(1): ReflectionMethod->__construct()
+#6 {main}
+  thrown at /home/devang-octal/NV-LARAVEL/banana_hub/vendor/composer/ClassLoader.php:582)
+[stacktrace]
+#0 {main}
+"} 
+[2024-09-14 10:10:30] local.ERROR: The "E:\NV-LARAVEL\banana_hub-777\banana_hub\resources\views" directory does not exist. {"exception":"[object] (Symfony\\Component\\Finder\\Exception\\DirectoryNotFoundException(code: 0): The \"E:\\NV-LARAVEL\\banana_hub-777\\banana_hub\\resources\\views\" directory does not exist. at /home/devang-octal/NV-LARAVEL/banana_hub/vendor/symfony/finder/Finder.php:646)
+[stacktrace]
+#0 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewCacheCommand.php(88): Symfony\\Component\\Finder\\Finder->in()
+#1 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewCacheCommand.php(43): Illuminate\\Foundation\\Console\\ViewCacheCommand->bladeFilesIn()
+#2 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(257): Illuminate\\Foundation\\Console\\ViewCacheCommand->Illuminate\\Foundation\\Console\\{closure}()
+#3 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/ViewCacheCommand.php(38): Illuminate\\Support\\Collection->each()
+#4 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\ViewCacheCommand->handle()
+#5 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#6 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#7 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#8 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call()
+#9 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call()
+#10 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#11 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#12 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(67): Illuminate\\Console\\Command->run()
+#13 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(40): Illuminate\\Console\\Command->runCommand()
+#14 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeCommand.php(38): Illuminate\\Console\\Command->callSilent()
+#15 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/View/Components/Task.php(40): Illuminate\\Foundation\\Console\\OptimizeCommand->Illuminate\\Foundation\\Console\\{closure}()
+#16 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/View/Components/Factory.php(60): Illuminate\\Console\\View\\Components\\Task->render()
+#17 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeCommand.php(39): Illuminate\\Console\\View\\Components\\Factory->__call()
+#18 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(257): Illuminate\\Foundation\\Console\\OptimizeCommand->Illuminate\\Foundation\\Console\\{closure}()
+#19 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/OptimizeCommand.php(39): Illuminate\\Support\\Collection->each()
+#20 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Console\\OptimizeCommand->handle()
+#21 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#22 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate\\Container\\Util::unwrapIfClosure()
+#23 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#24 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Container/Container.php(690): Illuminate\\Container\\BoundMethod::call()
+#25 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate\\Container\\Container->call()
+#26 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/symfony/console/Command/Command.php(279): Illuminate\\Console\\Command->execute()
+#27 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony\\Component\\Console\\Command\\Command->run()
+#28 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/symfony/console/Application.php(1047): Illuminate\\Console\\Command->run()
+#29 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/symfony/console/Application.php(316): Symfony\\Component\\Console\\Application->doRunCommand()
+#30 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/symfony/console/Application.php(167): Symfony\\Component\\Console\\Application->doRun()
+#31 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(197): Symfony\\Component\\Console\\Application->run()
+#32 /home/devang-octal/NV-LARAVEL/banana_hub/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1203): Illuminate\\Foundation\\Console\\Kernel->handle()
+#33 /home/devang-octal/NV-LARAVEL/banana_hub/artisan(13): Illuminate\\Foundation\\Application->handleCommand()
+#34 {main}
+"} 
