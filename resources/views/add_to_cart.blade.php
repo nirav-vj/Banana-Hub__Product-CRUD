@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +18,7 @@
             min-height: 100vh;
             margin: 0;
         }
+
         .cart-container {
             width: 80%;
             max-width: 1000px;
@@ -25,6 +27,7 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
             text-align: center;
         }
+
         .cart-item {
             display: flex;
             flex-direction: column;
@@ -32,6 +35,7 @@
             margin-bottom: 40px;
             margin-top: 15px;
         }
+
         .cart-item img {
             width: 480px;
             height: auto;
@@ -39,30 +43,36 @@
             margin-bottom: 20px;
             transition: transform 0.6s;
         }
+
         .cart-item img:hover {
             transform: scale(1.05);
         }
+
         .cart-item h1 {
             color: #018C43;
             font: italic small-caps bold 32px Georgia, serif;
             margin-bottom: 10px;
             text-align: center;
         }
+
         .cart-item h2 {
             font-size: 24px;
             margin-bottom: 15px;
             color: #333;
         }
+
         .cart-item h2 span {
             color: #00A526;
             font-weight: bold;
         }
+
         .total-price {
             margin-top: 30px;
             font-size: 28px;
             font-weight: bold;
             color: #018C43;
         }
+
         .cancel {
             font-size: 17px;
             font-weight: bold;
@@ -70,6 +80,7 @@
             background-color: #FFFFFF;
             border: 3px solid #018C43;
         }
+
         button {
             background-color: #018C43;
             color: white;
@@ -80,25 +91,32 @@
             font-size: 16px;
             transition: background-color 0.3s ease-in-out;
         }
+
         button:hover {
             color: black;
         }
+
         @media (max-width: 768px) {
             .cart-container {
                 padding: 20px;
             }
+
             .cart-item img {
                 width: 220px;
             }
+
             .cart-item h1 {
                 font-size: 24px;
             }
+
             .cart-item h2 {
                 font-size: 20px;
             }
+
             .total-price {
                 font-size: 24px;
             }
+
             button {
                 font-size: 14px;
                 padding: 8px 16px;
@@ -106,6 +124,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="cart-container">
         @php $totalPrice = 0; @endphp
@@ -127,7 +146,8 @@
                 <div class="cart-item">
                     <img src="{{ asset('images/' . $product->file) }}" alt="Product Image">
                     <h1>{{ $product->type_of_banana_Chips }}</h1>
-                    <h2>Price: ₹<span id="show-total-product-price-{{ $key }}">{{ $product->price }}</span></h2>
+                    <h2>Price: ₹<span id="show-total-product-price-{{ $key }}">{{ $product->price }}</span>
+                    </h2>
                     <input type="hidden" class="product-price-class" data-base-price="{{ $product->price }}"
                         value="{{ $product->price }}" id="product-total-price-{{ $key }}">
                     <div class="quantity">
@@ -141,7 +161,8 @@
                     <br>
                     <div style="display: flex; gap: 5px; justify-content: center; padding: 0; margin-right: 23px;">
                         <a><button>BUY IT NOW</button></a>
-                        <a href="{{ url('/home/add-to-cart/delete/') }}/{{ $product->id }}"><button>REMOVE</button></a>
+                        <a
+                            href="{{ url('/home/add-to-cart/delete/') }}/{{ $product->id }}"><button>REMOVE</button></a>
                     </div>
                     @php $totalPrice += $product->price; @endphp
                 </div>
@@ -174,7 +195,7 @@
             let quantity = parseInt(quantityInput.value) + change;
             if (quantity < 1) quantity = 1;
             quantityInput.value = quantity;
-            
+
             const basePrice = parseInt(productPriceInput.getAttribute("data-base-price"));
             const updatedPrice = basePrice * quantity;
             productPriceInput.value = updatedPrice;
@@ -187,4 +208,5 @@
         }
     </script>
 </body>
+
 </html>

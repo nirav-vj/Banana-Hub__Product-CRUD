@@ -11,8 +11,6 @@
         href="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Google-Drive-Forms-icon.png">
     <title>Our Product</title>
     <style>
-
-
         .hader {
             text-align: center;
             display: flex;
@@ -109,8 +107,6 @@
                 margin-left: 100%;
             }
         }
-
-        
     </style>
 </head>
 
@@ -132,16 +128,17 @@
             <h1>PRODUCTS</h1>
         </div>
 
-        <div style="padding-right:100px ; display: flex ;gap: 30px;margin-left:50px" class="offcanvas offcanvas-end" id="demo">
+        <div style="padding-right:100px ; display: flex ;gap: 30px;margin-left:50px" class="offcanvas offcanvas-end"
+            id="demo">
             <a href="/create"
                 style="margin-top:3px;color: #018c43 ;border:2px dashed #018C43 ;height: 28px; font-size: 25px;width: 30px;"
                 class="logo"><i class="fa-solid fa-plus" style="margin-left: 4px;"></i></a>
 
             <a href="/user"
-                    style=" color:#018c43 ;border:2px solid #018C43 ; font-size: 25px;border-radius: 34px;width: 35px;text-align: center;height: 33px;"
-                    class="logo"><i class="fa-regular fa-user" style="margin-top: 2.5px; "
-                        class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
-                </a>
+                style=" color:#018c43 ;border:2px solid #018C43 ; font-size: 25px;border-radius: 34px;width: 35px;text-align: center;height: 33px;"
+                class="logo"><i class="fa-regular fa-user" style="margin-top: 2.5px; " class="btn btn-primary"
+                    type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            </a>
 
 
         </div>
@@ -160,8 +157,8 @@
             <div style="text-align: center ;">
                 <div>
                     <a href="{{ url('/home/product') }}/{{ $bananahub->id }}">
-                        <img id="image"
-                            class="image"src={{ asset('images/' . $bananahub->file) }} alt="image not found"></a>
+                        <img id="image" class="image"src={{ asset('images/' . $bananahub->file) }}
+                            alt="image not found"></a>
                 </div>
                 <div>
                     <h2>{{ $bananahub->type_of_banana_Chips }} </h2>
@@ -170,8 +167,7 @@
                     <h2 style="color: rgb(97, 97, 97)">₹ {{ $bananahub->price }}</h2>
                 </div>
                 <div style="display: flex;justify-content: center;gap: 15px">
-                    <a href="{{ url('/home/edit/') }}/{{ $bananahub->id }}"><button
-                            class="buy-button">EDIT</button></a>
+                    <a href="{{ url('/home/edit/') }}/{{ $bananahub->id }}"><button class="buy-button">EDIT</button></a>
                     <a href="{{ url('/home/delete') }}/{{ $bananahub->id }}"><button
                             class="buy-button">DELETE</button></a>
                 </div>

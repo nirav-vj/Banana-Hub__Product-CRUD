@@ -30,14 +30,15 @@ class AuthenticatedSessionController extends Controller
     public function logincheck(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
-        
+
         $request->session()->regenerate();
-        
-        try{
+
+        try {
             $toemailaddress = $request->email;
             $welcomemail = "Wlcome to Banana-Hub app";
-            $responce = Mail::to($toemailaddress)->send(new WelcomeMail($welcomemail) );
-        }catch(Exception $e){error("Unable to send mail" . $e->getMessage());
+            $responce = Mail::to($toemailaddress)->send(new WelcomeMail($welcomemail));
+        } catch (Exception $e) {
+            error("Unable to send mail" . $e->getMessage());
         }
 
         return redirect('home');

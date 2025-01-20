@@ -112,7 +112,7 @@
                     @if (!empty($users->file))
                         <img src="{{ asset('images/' . $users->file) }}" alt="User Image"
                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
-                            <h1>{{$users->file}}</h1>
+                        <h1>{{ $users->file }}</h1>
                     @else
                         <i class="fa-regular fa-user"
                             style="font-size: 30px; color: #018C43; line-height: 60px; text-align: center; width: 60px; height: 60px;  border-radius: 30px;"></i>

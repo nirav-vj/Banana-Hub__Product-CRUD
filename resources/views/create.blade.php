@@ -247,7 +247,7 @@
                                 style="width: 250px; height: 25px;border-radius: 5px; border: 2px solid #018C43;"><br><br>
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="email"> Address :</label><span style="color: #018C43;margin-left: 10px">
                             @error('address')

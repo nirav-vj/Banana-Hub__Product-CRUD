@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome</title>
-    <link rel="icon" type="image" href="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Google-Drive-Forms-icon.png">
+    <link rel="icon" type="image"
+        href="https://icons.iconarchive.com/icons/alecive/flatwoken/512/Apps-Google-Drive-Forms-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
@@ -14,6 +16,7 @@
             object-fit: cover;
             text-decoration: none;
         }
+
         .navbar-container .ragister-button {
             justify-content: end;
             color: white;
@@ -21,6 +24,7 @@
             text-decoration: none;
             font-size: xx-large;
         }
+
         .navbar-container .login-button {
             border: none;
             color: white;
@@ -29,6 +33,7 @@
             text-decoration: none;
             font-size: xx-large;
         }
+
         .navbar-container {
             list-style-type: none;
             display: flex;
@@ -39,6 +44,7 @@
         }
     </style>
 </head>
+
 <body>
     <ul class="navbar-container">
         <li>
@@ -52,4 +58,5 @@
         </li>
     </ul>
 </body>
+
 </html>
